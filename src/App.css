@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 50vw;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+input:focus {
+  outline: none; /* Clean browser styles */
+  box-shadow: inset 0 0 0 2px var(--shadow-color); /* Inner shadow so don't add px's outside element when focus */
+}
+
+.screen {
+  width: 900px;
+}
+
+.author {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-top: 250px;
+}
+
+@media screen and (max-width: 1025px) {
+  .screen {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .screen {
+    width: 50vw;
+  }
+}
